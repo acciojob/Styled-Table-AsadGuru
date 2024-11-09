@@ -2,14 +2,150 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Covid-19 Statistics</title>
+    <style>
+        /* General body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Table container */
+        .table-container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Table styling */
+        table {
+            width: 100%;
+            border-collapse: collapse; /* Collapses the borders */
+        }
+
+        /* Header styling */
+        thead {
+            background-color: #2c3e50;
+            color: #fff;
+        }
+
+        th {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 2px solid #ddd;
+            font-weight: bold;
+        }
+
+        /* Body row styling */
+        tbody tr {
+            background-color: #f9f9f9;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #eaeaea; /* Alternating row colors */
+        }
+
+        td {
+            padding: 10px 15px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* Hover effect */
+        tbody tr:hover {
+            background-color: #d1e7ff;
+            cursor: pointer;
+        }
+
+        /* Responsive styling for smaller screens */
+        @media (max-width: 768px) {
+            table {
+                font-size: 14px;
+            }
+
+            td, th {
+                padding: 8px 10px;
+            }
+        }
+
+        /* Styling for column headers and values */
+        .active-cases {
+            color: #e74c3c; /* Red for active cases */
+        }
+
+        .recovered-cases {
+            color: #27ae60; /* Green for recovered cases */
+        }
+
+        .deaths {
+            color: #e67e22; /* Orange for deaths */
+        }
+
+    </style>
 </head>
 <body>
-    <!-- add table here -->
 
-        
+    <!-- Table container -->
+    <div class="table-container">
+        <h2 style="text-align:center; color: #2c3e50;">Covid-19 Statistics</h2>
+        <!-- Table structure -->
+        <table>
+            <!-- Table header -->
+            <thead>
+                <tr>
+                    <th>Country</th>
+                    <th>Total Cases</th>
+                    <th>Active Cases</th>
+                    <th>Recovered</th>
+                    <th>Deaths</th>
+                </tr>
+            </thead>
+            <!-- Table body -->
+            <tbody>
+                <tr>
+                    <td>USA</td>
+                    <td>50,000,000</td>
+                    <td class="active-cases">1,500,000</td>
+                    <td class="recovered-cases">48,000,000</td>
+                    <td class="deaths">800,000</td>
+                </tr>
+                <tr>
+                    <td>India</td>
+                    <td>44,000,000</td>
+                    <td class="active-cases">1,200,000</td>
+                    <td class="recovered-cases">42,000,000</td>
+                    <td class="deaths">500,000</td>
+                </tr>
+                <tr>
+                    <td>Brazil</td>
+                    <td>30,000,000</td>
+                    <td class="active-cases">800,000</td>
+                    <td class="recovered-cases">28,500,000</td>
+                    <td class="deaths">600,000</td>
+                </tr>
+                <tr>
+                    <td>Russia</td>
+                    <td>22,000,000</td>
+                    <td class="active-cases">500,000</td>
+                    <td class="recovered-cases">21,000,000</td>
+                    <td class="deaths">400,000</td>
+                </tr>
+                <tr>
+                    <td>UK</td>
+                    <td>15,000,000</td>
+                    <td class="active-cases">300,000</td>
+                    <td class="recovered-cases">14,500,000</td>
+                    <td class="deaths">250,000</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
 </body>
 </html>
